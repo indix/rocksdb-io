@@ -12,7 +12,7 @@ val scaldingCore = "com.twitter" %% "scalding-core" % "0.12.0" % "provided"
 val appVersion = sys.env.getOrElse("SNAP_PIPELINE_COUNTER", "1.0.0-SNAPSHOT")
 
 lazy val commonSettings = Seq(
-  organization := "indix",
+  organization := "com.indix",
   organizationName := "Indix",
   organizationHomepage := Some(url("http://www.indix.com")),
   version := appVersion,
