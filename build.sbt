@@ -23,7 +23,6 @@ lazy val commonSettings = Seq(
   javacOptions ++= Seq("-Xlint:deprecation", "-source", "1.7"),
   resolvers ++= Seq(
     "Cloudera Repo" at "https://repository.cloudera.com/artifactory/cloudera-repos/",
-    "maven.org" at "http://repo2.maven.org/maven2",
     "conjars.org" at "http://conjars.org/repo"
   )
 )
@@ -37,17 +36,17 @@ lazy val publishSettings = Seq(
       Some("releases" at nexus + "service/local/staging/deploy/maven2")
   },
   pomExtra :=
-    <url>https://github.com/ind9/scalding-rocksdb</url>
+    <url>https://github.com/ind9/rocksdb-io</url>
       <licenses>
         <license>
           <name>Apache License</name>
-          <url>https://raw.githubusercontent.com/ind9/scalding-rocksdb/master/LICENSE</url>
+          <url>https://raw.githubusercontent.com/ind9/rocksdb-io/master/LICENSE</url>
           <distribution>repo</distribution>
         </license>
       </licenses>
       <scm>
-        <url>git@github.com:ind9/scalding-rocksdb.git</url>
-        <connection>scm:git:git@github.com:ind9/scalding-rocksdb.git</connection>
+        <url>git@github.com:ind9/rocksdb-io.git</url>
+        <connection>scm:git:git@github.com:ind9/rocksdb-io.git</connection>
       </scm>
       <developers>
         <developer>
